@@ -1,0 +1,13 @@
+import pandas as pd
+
+# Example of lookalike results, assuming 'lookalike_df' is already computed
+lookalike_df = pd.DataFrame({
+    'CustomerID': ['C0001', 'C0002', 'C0003'],
+    'SimilarCustomerID': ['C0005', 'C0008', 'C0009'],
+    'SimilarityScore': [0.89, 0.85, 0.82]
+})
+
+# Save the lookalike results to a CSV file
+lookalike_df.to_csv('FirstName_LastName_Lookalike.csv', index=False)
+
+print("Lookalike results saved to 'FirstName_LastName_Lookalike.csv'")
